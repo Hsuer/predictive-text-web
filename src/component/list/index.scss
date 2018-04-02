@@ -1,0 +1,56 @@
+.comp-list {
+  position: relative;
+  height: 100%;
+  width: 200px;
+  background: #fff;
+
+  .comp-list-create {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    border-bottom: 1px solid #ececec;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #f8f8f8;
+    }
+  }
+
+  .comp-list-group {
+    .comp-list-item {
+      position: relative;
+      padding: 8px 24px 8px 12px;
+      border-bottom: 1px solid #ececec;
+      cursor: pointer;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      word-break: break-all;
+
+      .anticon-file-text {
+        margin-right: 5px;
+      }
+
+      &:hover, &.active {
+        background-color: #f8f8f8;
+      }
+
+      &.edited {
+        &::after {
+          content: '';
+          display: inline-block;
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background-color: orange;
+          position: absolute;
+          right: 12px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+}

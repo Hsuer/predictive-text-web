@@ -1,0 +1,109 @@
+.comp-input {
+  position: relative;
+  background: #fff;
+  padding : 25px;
+  margin-left: 20px;
+  height: 100%;
+  flex: 1;
+
+  .comp-input-setting {
+    position: absolute;
+    padding: 8px 15px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #ececec;
+
+    .comp-input-setting__title {
+      margin-right: 20px;
+      font-weight: bold;
+    }
+  }
+
+  .comp-input-title {
+    margin-top: 30px;
+
+    input {
+      border-radius: 0;
+      height: 36px;
+      font-size: 18px;
+    }
+  }
+
+  .comp-input-candidate_list {
+    display: flex;
+    border: 1px solid #d9d9d9;
+    height: 40px;
+    position: absolute;
+    bottom: 70px;
+    left: 25px;
+    right: 25px;
+    font-size: 14px;
+
+    &:empty {
+      display: none;
+    }
+
+    span {
+      background-color: #fff; 
+      display: flex;
+      height: 100%;
+      flex: 1;
+      border-right: 1px solid #d9d9d9;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      white-space: nowrap;
+
+      &:nth-last-child(1) {
+        border-right: none;
+      }
+
+      &:hover {
+        background-color: orange; 
+      }
+    }
+  }
+
+  .comp-input-content {
+    margin-top: 15px;
+    position: absolute;
+    top: 90px;
+    bottom: 70px;
+    left: 25px;
+    right: 25px;
+
+    textarea {
+      resize: none;
+      border-radius: 0;
+      font-size: 16px;
+      height: 100%;
+      width: 100%;
+      box-shadow: none;
+      border: 1px solid #d9d9d9 !important;
+    }
+  }
+
+  .comp-input-autosave {
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
+  }
+
+  .comp-input-opt {
+    position: absolute;
+    right: 25px;
+    bottom: 20px;
+
+    button {
+      border-radius: 0;
+      height: 32px;
+      font-size: 12px;
+
+      &:nth-child(1),
+      &:nth-child(2) {
+        margin-right: 15px;
+      }
+    }
+  }
+}

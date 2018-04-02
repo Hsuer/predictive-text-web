@@ -1,0 +1,30 @@
+@import '~antd/dist/antd.css';
+
+.comp-layout {
+  .comp-layout-header {
+    height: 48px;
+  }
+
+  .comp-layout-logo {
+    width: 160px;
+    height: 31px;
+    background: #333;
+    border-radius: 6px;
+    margin: 9px 24px 16px 0;
+    float: left;
+    color: #fff;
+    font-size: 16px;
+    line-height: 31px;
+    text-align: center;
+  }
+  
+  .comp-layout-content {
+    display: flex;
+    padding: 25px 50px 0;
+    height: calc(100vh - 114px);
+  }
+
+  .comp-layout-footer {
+    text-align: center;
+  }
+}
