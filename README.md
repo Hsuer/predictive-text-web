@@ -17,6 +17,4 @@ $ npm start
 ```
 
 ### 预览
-[Predictve-Text](http://www.jh-abc.xyz:3000/)
-
 <img width="500" src="https://user-images.githubusercontent.com/8482405/38191188-489658e0-369a-11e8-996a-2d987d14a06c.png"/>
